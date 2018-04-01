@@ -20,7 +20,7 @@ Mitch.penDown();
         // 4. Set the robot’s speed to 10
 Mitch.setSpeed(10);
         // 5. Do everything below here 360 times (use i as the counter)
-for (int i = 0; i < args.length; i++) {
+for (int i = 0; i < 360; i++) {
 	
 
 	        // 6. Move the robot 3 pixels
@@ -29,9 +29,11 @@ Mitch.move(3);
 Mitch.turn(1);
       // 8. If the counter i is divisible by 20 (hint: use mod operator  %)..
 if (i%20==0) {
-	for (Mitch
+	for (int j = 0; j < 360; j++) {
+		Mitch.move(1);
+		Mitch.turn(1);
 	}
-}
+	}
 
 		// 9. do steps 10 and 11 exactly 360 times (use j as the counter)
 
